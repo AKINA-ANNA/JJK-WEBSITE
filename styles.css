@@ -8,9 +8,9 @@
 .hero {
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3));
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) no-repeat center/cover;
     position: relative;
-    
+    z-index: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -25,7 +25,7 @@
     position: absolute;
     top: 0;
     left: 0;
-   padding: auto 100px;
+   padding: 0 100px;
    background: rgba(0,0,0,0.3);
    backdrop-filter: blur(3px);
  }
@@ -38,6 +38,7 @@
     display: inline-block;
     border-bottom: 2px solid transparent;
     margin-top: auto;
+    margin-left: -50px;
  }
    nav .logo:hover {
     transform: rotate(138deg);
@@ -88,7 +89,7 @@
     color: #fff;
     margin-bottom: 30px;
     font-weight: 500;
-    padding: auto;
+    padding: 0;
     transition: 1s;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -107,7 +108,7 @@
     justify-content: center;
     align-items: center;
    display: inline-flex;
-   box-shadow: linear-gradient(to bottom right,#008cff,#e100ff);
+   box-shadow: 0 0 20px rgba(0, 140, 255, 0.5);
 }
 .content a::after{
     
