@@ -38,6 +38,7 @@
     display: inline-block;
     border-bottom: 2px solid transparent;
     margin-top: auto;
+    margin-left: -50px;
  }
    nav .logo:hover {
     transform: rotate(138deg);
