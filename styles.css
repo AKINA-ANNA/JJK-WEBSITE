@@ -142,3 +142,61 @@
     height: 100%;
     object-fit: cover;
 }
+.box {
+    position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    color: #fff;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    margin-top: 130px;
+    z-index: 1;
+    transition: width 1s ease, box-shadow 0.3s ease-in-out,font-size 0.5s ease;
+    font-size: large;
+
+}
+.box:hover {
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.4);
+   /* smoothly animates */
+    font-size: larger;/* smoothly animates */
+}
+
+
+.backdrop { 
+    /*
+   position: relative;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+     margin-top: -300px;
+     width: 100%;
+    height: 400px; 
+    padding: 20px; 
+    border: 1px solid #000000; 
+    
+    box-sizing: border-box;
+    z-index: 0;
+    padding-bottom: 50px;
+    bottom: 0;*/
+     position: absolute; 
+  width: 100%;
+  min-height: 100vh;   
+  background: rgba(0, 0, 0, 0.796);
+  padding: 40px;
+  box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    margin-top: -500px;
+    
+ 
+}
+
