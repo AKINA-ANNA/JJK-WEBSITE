@@ -54,7 +54,7 @@ nav .logo:hover {
 nav ul {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 2px;
 }
 
 nav ul li {

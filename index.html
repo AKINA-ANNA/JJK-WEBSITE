@@ -17,19 +17,29 @@
          <img src="assests/logo.png" class="logo">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#box" id="scrollBtn" class="scroll-btn">About</a></li>
+             <li><a href="index.html#box" id="aboutBtn" class="scroll-btn">About</a></li>
             <li><a href="news.html">News</a></li>
             <li><a href="#">Community</a></li>
         </ul>
        </nav>
         <script>
-  // Replace 'scrollBtn' with the actual id of your button
-           document.getElementById("scrollBtn").addEventListener("click", function() {
-           document.getElementById("box").scrollIntoView({
-            behavior: "smooth",   // makes the scroll animated
-            block: "start"
-              });
-                   });
+ window.onload = () => {
+    if (window.location.hash === "#box") {
+    const target = document.querySelector("#box");
+    if (target) {
+      // Reset to top first
+      window.scrollTo(0, 0);
+
+      // Smooth scroll after short delay
+      setTimeout(() => {
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }, 300);
+    }
+  }
+};
         </script>
 
      <div class="content">
