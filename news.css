@@ -209,3 +209,142 @@ nav ul li a:hover {
 
   
 }
+/* Slider container */
+.slider {
+  position: relative;
+  width: 95%;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Slider track */
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Each slide */
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 2rem;
+  background: #12121200;
+}
+
+/* News sections */
+.news-section, .news-movie-section {
+  flex: 1 1 45%; /* flexible width */
+  margin: 1rem;
+  padding: 1rem;
+  background: #1a1a1a;
+  color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+  z-index: 1;
+}
+
+.news-section:hover, .news-movie-section:hover {
+  transform: scale(1.05);
+  font-size: large;
+}
+
+/* Navigation buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  cursor: pointer;
+  border-radius: 50%;
+  font-size: 1.2rem;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+/* 📱 Mobile responsiveness */
+@media (max-width: 768px) {
+  .slide {
+    flex-direction: column; /* stack boxes vertically */
+    align-items: center;
+    padding: 1rem;
+  }
+
+  .news-section, .news-movie-section {
+    flex: 1 1 100%;
+    max-width: 95%;
+    margin: 0.5rem 0;
+    font-size: 0.9rem;
+  }
+
+  .prev, .next {
+    padding: 0.6rem;
+    font-size: 1rem;
+  }
+}
+
+/* 📱 Extra small screens */
+@media (max-width: 480px) {
+  .news-section, .news-movie-section {
+    font-size: 0.8rem;
+    padding: 0.8rem;
+  }
+
+  h2, h3 {
+    font-size: 1rem;
+  }
+
+  .prev, .next {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+}
+.time{
+ width: 80%;
+    padding: 20px; /* Thicker "frame" area */
+    background-color: #000000; /* Color of the frame itself */
+   
+    
+    /* Creating a sunken look with shadows */
+   
+   transition: all 0.6s ease-in-out ;
+    margin: 20px auto
+}
+/*.time:hover{
+  box-shadow: 0 0 15px #00ffea, 0 0 30px #00b3a6;
+    transform: scale(1.2);
+}*/
+.time img{
+  max-width: 100%;
+    height: auto;
+    display: block;
+    /* Optional: subtle border around the image itself inside the frame */
+    border: 1px solid #ccc;/* Helps with centering/layout issues */
+    transition: all 0.6s ease-in-out ;
+}
+.time img:hover{
+  filter: drop-shadow(0 0 10px #00ffea) drop-shadow(0 0 20px #6afff1);
+  transform: scale(1.1);
+}
+.time h1{
+  text-align: center;
+  color: #ffffff;
+ 
+}
+@media (max-width: 768px) {
+  .time h1{
+    font-size: medium;
+  }
+}
+@media (max-width: 480px) {
+  .time h1{
+    font-size: medium;
+  }
+}
