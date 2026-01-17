@@ -43,6 +43,8 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     output.innerText = "Login failed";
   } else {
     output.innerText = "Login successful";
+    // Redirect to community.html after successful login
+    window.location.href = "community.html";
   }
 });
 
@@ -64,7 +66,7 @@ document.getElementById("signup-form").addEventListener("submit", async (e) => {
   if (error) {
     output.innerText = "Signup failed";
   } else {
-    output.innerText = "Signup successful: VERIFICATION LINK HAS BEEN SENT TO YOUR EMAIL";
+    output.innerText = "Signup successful";
   }
 });
 
