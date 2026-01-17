@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login / Signup</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+         <img src="assests/logo.png" class="logo">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+             <li><a href="index.html#box" id="aboutBtn" class="scroll-btn">About</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="test.html">Community</a></li>
+        </ul>
+       </nav>
+<div class="wrapper">  
+  <!-- Login Section -->
+  <div id="login-section" class="form-box">
+    <h1>LOGIN</h1>
+    <form id="login-form">
+      <div class="input-field">
+        <i class='bx bxs-envelope'></i>
+        <input type="email" id="login-email" placeholder="Email" required>
+      </div>
+      <div class="input-field">
+        <i class='bx bxs-lock-alt'></i>
+        <input type="password" id="login-password" placeholder="Password" required>
+      </div>
+      <div class="remember-forgot">
+        <label>
+          <input type="checkbox" id="remember-me"> Remember Me
+        </label>
+        <a href="#" id="forgot-password">Forgot Password?</a>
+      </div>
+      <button type="submit" class="btn">Login</button>
+    </form>
+    <div class="register-link">
+      <p>Don't have an account? 
+        <a href="#" id="show-signup">Register</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Signup Section -->
+  <div id="signup-section" class="form-box hidden">
+    <h1>Sign Up</h1>
+    <form id="signup-form">
+      <div class="input-field">
+        <i class='bx bxs-envelope'></i>
+        <input type="email" id="signup-email" placeholder="Email" required>
+      </div>
+      <div class="input-field">
+        <i class='bx bxs-lock-alt'></i>
+        <input type="password" id="signup-password" placeholder="Password" required>
+      </div>
+      <div class="input-field">
+        <i class='bx bxs-user'></i>
+        <input type="text" id="signup-username" placeholder="Username">
+      </div>
+      <button type="submit" class="btn">Register</button>
+    </form>
+    <div class="register-link">
+      <p>Already have an account? 
+        <a href="#" id="show-login">Back to Login</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- Output and Logout -->
+ <div class="output">
+  <pre id="output" ></pre>
+</div>
+
+<script type="module" src="sign.js"></script>
+</body>
+</html>
