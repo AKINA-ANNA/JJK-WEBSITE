@@ -199,3 +199,78 @@ nav ul li a:hover {
   border-bottom: 2px solid #ff0000;
   text-shadow: 0 0 10px #e26710; /* glowing effect */
   transform: scale(1.1);}
+  /* Responsive adjustments */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    background-position: top;
+  }
+
+  .wrapper {
+    width: 90%;
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+    padding: 8px 10px;
+  }
+
+  .output {
+    width: 90%;
+    left: 50%;
+    top: auto;
+    transform: translateX(-50%);
+    margin-top: 20px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .wrapper h1 {
+    font-size: 24px;
+  }
+
+  .input-field {
+    margin: 20px 0;
+    height: 45px;
+  }
+
+  .input-field input {
+    font-size: 14px;
+    padding: 15px 40px 15px 15px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+    padding: 6px 8px;
+  }
+
+  .btn {
+    height: 40px;
+    font-size: 14px;
+  }
+}
