@@ -44,7 +44,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
   } else {
     output.innerText = "Login successful";
     // Redirect to community.html after successful login
-    window.location.href = "community.html";
+    window.location.href = "community/community.html";
   }
 });
 
