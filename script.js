@@ -22,3 +22,4 @@ function playRandomSound() {
     // 5. Play the chosen sound
     audioPlayer.play();
 }
+

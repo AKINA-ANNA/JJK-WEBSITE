@@ -5,7 +5,6 @@
   font-family: 'Courier New', Courier, monospace;
 
 }
-
 .hero {
   width: 100%;
   min-height: 100vh;
@@ -378,3 +377,4 @@ nav ul li a:hover {
     margin: 20px auto;
   }
 }
+/* Fullscreen loader with background image */
